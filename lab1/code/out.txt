@@ -1,0 +1,80 @@
+
+<process 0 forks> ::
+{0, F, (0) <-> 1}, {1, F, (0) <-> 1}, 
+
+<process 1 forks> ::
+{1, F, (0) <-> 1}, {2, F, (1) <-> 2}, 
+
+<process 2 forks> ::
+{2, F, (1) <-> 2}, {0, F, (0) <-> 2}, 
+<process 2> :: Thought for <2460ms>, now want to eat!
+<process 2> :: I don't have a fork 2! -> Asking 1 for it.
+<process 1> :: Received a message while sleeping.
+<process 1> :: Passing the fork 2 to 2.
+<process 2> :: Got a fork 2.
+<process 2> :: I don't have a fork 0! -> Asking 0 for it.
+<process 0> :: Received a message while sleeping.
+<process 0> :: Passing the fork 0 to 2.
+<process 2> :: Got a fork 0.
+<process 2> :: I have all the forks, EATING!
+
+<process 2 forks> ::
+{2, F, (2) <-> 1}, {0, F, (2) <-> 0}, 
+<process 1> :: Thought for <2900ms>, now want to eat!
+<process 1> :: I don't have a fork 1! -> Asking 0 for it.
+<process 0> :: Received a message while sleeping.
+<process 0> :: Passing the fork 1 to 1.
+<process 1> :: Got a fork 1.
+<process 1> :: I don't have a fork 2! -> Asking 2 for it.
+<process 2> :: Received a message while sleeping.
+<process 2> :: Passing the fork 2 to 1.
+<process 1> :: Got a fork 2.
+<process 1> :: I have all the forks, EATING!
+
+<process 1 forks> ::
+{1, F, (1) <-> 0}, {2, F, (1) <-> 2}, 
+<process 1> :: Thought for <2190ms>, now want to eat!
+<process 1> :: I have all the forks, EATING!
+
+<process 1 forks> ::
+{1, F, (1) <-> 0}, {2, F, (1) <-> 2}, 
+<process 1> :: Thought for <2880ms>, now want to eat!
+<process 1> :: I have all the forks, EATING!
+
+<process 1 forks> ::
+{1, F, (1) <-> 0}, {2, F, (1) <-> 2}, 
+<process 1> :: Thought for <750ms>, now want to eat!
+<process 1> :: I have all the forks, EATING!
+
+<process 1 forks> ::
+{1, F, (1) <-> 0}, {2, F, (1) <-> 2}, 
+<process 1> :: Thought for <610ms>, now want to eat!
+<process 1> :: I have all the forks, EATING!
+
+<process 1 forks> ::
+{1, F, (1) <-> 0}, {2, F, (1) <-> 2}, 
+<process 0> :: Thought for <3830ms>, now want to eat!
+<process 0> :: I don't have a fork 0! -> Asking 2 for it.
+<process 2> :: Received a message while sleeping.
+<process 2> :: Passing the fork 0 to 0.
+<process 0> :: Got a fork 0.
+<process 0> :: I don't have a fork 1! -> Asking 1 for it.
+<process 1> :: Received a message while sleeping.
+<process 1> :: Passing the fork 1 to 0.
+<process 0> :: Got a fork 1.
+<process 0> :: I have all the forks, EATING!
+
+<process 0 forks> ::
+{0, F, (0) <-> 2}, {1, F, (0) <-> 1}, 
+<process 0> :: Thought for <3860ms>, now want to eat!
+<process 0> :: I have all the forks, EATING!
+
+<process 0 forks> ::
+{0, F, (0) <-> 2}, {1, F, (0) <-> 1}, 
+<process 0> :: Thought for <2770ms>, now want to eat!
+<process 0> :: I have all the forks, EATING!
+
+<process 0 forks> ::
+{0, F, (0) <-> 2}, {1, F, (0) <-> 1}, 
+[mpiexec@28034b103df9] Sending Ctrl-C to processes as requested
+[mpiexec@28034b103df9] Press Ctrl-C again to force abort
